@@ -1,26 +1,23 @@
-cs343
+# To run this program, you must install uC++: https://github.com/pabuhr/uCPP
 
-Assignment 6
+This simulates a group of students using their student cards to purchase soda.
+These objects are run as separate threads, and use a combination of synchronous and asynchronous behavior to function smoothly.
 
-Insructor: Peter Buhr
+I am posting this school assignment to my github because:
+A) My partner and I received full marks
+B) This assignment is no longer used, so I'm not worried about others cheating
+C) It was a lot of fun to make
 
-WATCola Project
+parent.cc - simulates the parents. They deposit money into student's student card accounts.
+bank.cc - simulates the bank. Parents can only deposit into student cards after withdrawing from bank.
+groupoff.cc - simulates the group coupon office. Gives out n gift cards to students.
+watcardoffice.cc - stores the balances for all the students' student card. Works similar to a bank (is contacted by vending machines)
+nameserver.cc - assigns names to vending machines and keeps a registry of them
+bottlingplant.cc - produces different kinds of coda
+truck.cc - delivers soda to vending machines
+vendingmachine.cc - interacts with couriers, students, nameserver, and watcardoffice
+printer.cc - receives updates from all threads about their status, prints to the terminal
+config.cc - used to alter settings of the simulation
 
-
-Notes:
-
-Makefile implements "make", "make soda", "make clean", and "make run"
-
-soda.config is for for quick testing, it is automatically used by "make run"
-
-printer.instantPrint is a boolean that flushes the printer after every call to print for debugging purposes - to be removed before submitting assignment
-
-testConfig has the default config file values given in the assignment
-
-sodacode.cc contains the code snippets provided in the assignment and is NOT used in the actual compilation - it's a clipboard basically
-
-sodaEX is the example executable provided
-
-Built: Printer, Bank, Parent, WATCardOffice, Courier, Groupoff
-
-Needed: NameServer, Student, VendingMachine, DeliveryTruck, BottlingPlant
+sodaEX - If you don't want to install uC++, I've included the compiled executable program
+Run with ./sodaEX
