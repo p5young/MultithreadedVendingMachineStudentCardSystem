@@ -4,9 +4,9 @@ https://github.com/pabuhr/uCPP
 This simulates a group of students using their student cards to purchase soda.
 These objects are run as separate threads, and use a combination of synchronous and asynchronous behavior to function smoothly.
 
-I am posting this school assignment to my github because:
-A) My partner and I received full marks
-B) This assignment is no longer used, so I'm not worried about others cheating
+I am posting this school assignment to my github because:\
+A) My partner and I received full marks\
+B) This assignment is no longer used, so I'm not worried about others cheating\
 C) It was a lot of fun to make
 
 parent.cc - simulates the parents. They deposit money into student's student card accounts.\
